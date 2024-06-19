@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Contador de Palabras</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="css/custom.css" rel="stylesheet" type="text/css">
+    <link href="fonts/glyphicons-halflings-regular.ttf" rel="stylesheet">
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/custom.js"></script>
+</head>
+<body>
+<h1 class="text-center">Contador de Palabras</h1>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-4">
+            <h3>Revisión</h3>
+            <hr>
+            <address>
+                <strong>Palabras:</strong> <p id="conteo_palabras">0</p>
+                <strong>Tamaño promedio de palabras:</strong> <p id="tamanio_promedio_palabra">0</p>
+                <strong>Oraciones:</strong> <p id="conteo_oraciones">0</p>
+                <strong>Palabra mas larga:</strong> <p id="palabra_mas_larga"></p>
+            </address>
+        </div>
+
+        <div class="col-sm-8 contact-form">
+                <div class="row">
+                    <div class="col-xs-6 col-md-6 form-group">
+                        <h3>Ingrese Texto</h3>
+                        <hr>
+                    </div>
+                </div>
+                <textarea class="form-control" id="text" name="text" placeholder="Ingrese Palabras para revisar" rows="5" required="required"></textarea>
+                <br />
+                <div class="row">
+                    <div class="col-xs-12 col-md-12 form-group">
+                        <button class="btn btn-primary" onclick="revisar()"><span class="glyphicon glyphicon-pencil"></span> Revisar</button>
+                        <button class="btn btn-danger" onclick="limpiar()"><span class="glyphicon glyphicon-trash"></span> Limpiar texto</button>
+                    </div>
+                </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
